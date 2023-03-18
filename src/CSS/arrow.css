@@ -1,0 +1,30 @@
+header h1{ 
+    text-align: center;
+}
+.header__box{
+    display: flex;
+    justify-content: center;
+}
+.header__input input{
+    padding: 5px 10px;
+    margin: 5px;
+}
+.header__btn{
+    display: flex;
+    justify-content: center;
+}
+.header__btn button{
+    margin: 10px;
+    padding: 5px 20px;
+}
+.header__table{
+    display: flex;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th,td{
+    padding: 5px 30px;
+}

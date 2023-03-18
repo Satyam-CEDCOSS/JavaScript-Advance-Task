@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/classes.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Navigation Menu  -->
+      <nav>
+        <div class="nav__box">
+          <ul>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="array_of_object.html">Array of Object</a></li>
+            <li><a href="promises.html">Promises</a></li>
+            <li><a href="this_keyword.html">'this' Keyword</a></li>
+            <li><a href="async_await_fetch.html">Async, await and fetch()</a></li>
+            <li><a href="arrow_function.html">Arrow Function</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="regex.html">Regular Expressions</a></li>
+            <li><a href="javascript_dom.html">JavaScript DOM</a></li>
+            <li><a href="code_optimization.html">Code Optimization</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <h1>Classes</h1>
+        <div class="header__box">
+          <div class="header__inputs">
+            <div class="box1">
+              <label for="ids">ID:</label>
+              <input type="number" id="ids">
+            </div>
+            <div class="box2">
+              <label for="name">Name:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="box3">
+              <label for="salary">Basic Sal:</label>
+              <input type="number" id="salary">
+            </div>
+            <div class="header__btn">
+              <button onclick="insert()">Add</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="section__box">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name:</th>
+                <th>Total Salary:</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbdy"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="../JS/classes.js"></script>
+</html>

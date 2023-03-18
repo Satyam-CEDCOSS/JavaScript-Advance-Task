@@ -1,0 +1,35 @@
+/* Header Area  */
+header h1{
+    text-align: center;
+}
+.header__box{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.header__inputs .box1, .box2, .box3 {
+    margin: 10px;
+}
+
+.header__inputs input{
+    padding: 5px 10px;
+}
+.header__btn button{
+    padding: 5px 20px;
+}
+
+/* Section Area  */
+.section__box{
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th,td{
+    padding: 5px 30px;
+}
