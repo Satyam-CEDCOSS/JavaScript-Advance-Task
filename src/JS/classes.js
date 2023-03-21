@@ -1,6 +1,6 @@
 data=[]
 class employee{
-    constructor(id ,name, salary) {
+    constructor(id ,name, salary) { 
       this.id = id;
       this.name = name;
       this.salary = salary

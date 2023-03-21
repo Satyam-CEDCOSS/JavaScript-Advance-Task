@@ -34,10 +34,10 @@ var Data = [
     orderindex: 1,
     content:
       "User Story Definition: an informal, natural language description of features of a software system written from the perspective of an end user.\nEnd users in GoodMarket: Buyer/Vendor/Network/Admin\nNot an end user: client/developer/tester/designer/manager\nUser Stories Reference\nRequirement Overview: The target is to complete as much as possible within 3 months (mid June to mid September 2022) so that B2C products with payments and gift cards are available for the 2022 holiday season.",
-      status: {
-        status: "active",
-        color: "#9b59b6",
-      },
+    status: {
+      status: "active",
+      color: "#9b59b6",
+    },
     priority: null,
     assignee: null,
     task_count: "0",
@@ -196,7 +196,7 @@ var Data = [
     },
     archived: false,
     override_statuses: true,
-    permission_level: "create", 
+    permission_level: "create",
   },
   {
     id: "193352341",
@@ -230,20 +230,37 @@ var Data = [
 let body = document.getElementById("tbdy");
 function display() {
   let txt = "";
-  for (let i = 0; i< Data.length; i++){
-    txt+="<tr><td>"+Data[i].id+"</td><td>"+Data[i].name+"</td><td>"+Data[i].orderindex+"</td><td style='background-color:"+Data[i].status.color+"';></td></tr>";
+  for (let i = 0; i < Data.length; i++) {
+    txt +=
+      "<tr><td>" +
+      Data[i].id +
+      "</td><td>" +
+      Data[i].name +
+      "</td><td>" +
+      Data[i].orderindex +
+      "</td><td style='background-color:" +
+      Data[i].status.color +
+      "';></td></tr>";
   }
   body.innerHTML = txt;
 }
 display();
-var flag = 0
+let cnt = 0;
+let flag = 0;
 function del() {
-  if (flag==0){
-    flag=1
-    body.deleteRow(1)
+  if (flag == 0) {
+    flag = 1;
+    cnt = 1;
+    body.deleteRow(1);
   }
 }
 function upt() {
-  Data[7].name = "Hello World!"
-  display()
+  if (cnt == 1 && flag == 1) {
+    Data[7].name = "Hello World!";
+    display();
+    body.deleteRow(1);
+  } else {
+    Data[7].name = "Hello World!";
+    display();
+  }
 }

@@ -1,7 +1,7 @@
 const group = document.getElementsByTagName("h1");
 // console.log(group[2].className)
 function action() {
-    const group = document.getElementsByTagName("h1");
+  const group = document.getElementsByTagName("h1");
   for (let i = 0; i < group.length; i++) {
     if (group[i].className != "bingo") {
       const sel = document.createElement("h2");
