@@ -1,4 +1,4 @@
-let a = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+let a = [-1, -1, -1, -1, -1, -1, -1, -1, -1]; 
 let temp = 1;
 function action(val) {
   console.log(val.id);
@@ -19,6 +19,7 @@ function action(val) {
   var bo = loop()
   if (bo==true){
     alert("You Won")
+    location.reload();
   }
 }
 function loop() {
