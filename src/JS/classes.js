@@ -11,8 +11,13 @@ function insert(){
     let x = document.getElementById("ids").value;
     let y = document.getElementById("name").value;
     let z = document.getElementById("salary").value;
-    data.push(new employee(x, y, z));
-    display()
+    if(x&&y&&z){
+        data.push(new employee(x, y, z));
+        display() 
+    }
+    else{
+        alert("Fill Empty Column")
+    }
 
 }
 
